@@ -1,0 +1,156 @@
+@media screen and (max-width: 1020px){
+    /* INICIO ESTILIZACAO HEADER */
+    .interface .logotipo img{
+        width: 45%;
+    }
+    
+    .menu-mob{
+        display: inline-block
+    }
+
+    .menu-mob i{
+        font-size: 2.5rem;
+        margin: -20px 0;
+    }
+
+    .menu-desktop{
+        display: none;
+    }
+
+   
+
+   
+
+    /* FIM DA ESTILIZACAO DO HEADER */
+
+    /* INCIO ESTILIZACAO TELA PRINCIPAL */
+    .topo-do-site .flex{
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    
+    .topo-do-site .txt-topo h1{
+        font-size: 2.5rem;
+        line-height: 40px;
+    }
+    
+    
+    .topo-do-site .img-topo img{
+        width: 100%;
+        border-radius: 30px;
+    }
+    /* FIM TELA PRINCIPAL */
+    
+
+     /* Sessao Sobre */
+     
+    section.sobre{
+        padding: 80px 6%;
+    }
+
+    .sobre .flex{
+        flex-direction: column;
+       
+    }
+
+    .sobre h2{
+        font-size: 2.25rem;
+        line-height: 38px;
+        margin-bottom: 30px;
+    }
+    .sobre p{
+        margin-bottom: 40px;
+    }
+
+    .sobre .img-sobre img{
+        display: none;
+    }
+
+
+    /* Sessao projetos */
+
+    section.projetos{
+        padding: 60px 5%;
+    }
+    .projetos .interface h2{
+        font-size: 2.25rem;
+        margin-bottom: 50px;
+    }
+
+    .projetos .flex{
+        gap: 40px;
+    }
+
+    /* INICIO ESTILIZACAO FORMULARIO */
+    section.contato{
+        padding: 60px 5%;
+    }
+    .txt-contato , .form-contato{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .txt-contato{
+        margin-bottom: 50px;
+        text-align: center;
+
+    }
+    
+    .txt-contato h2{
+        font-size: 3rem;
+        line-height: 40px;
+    }
+    
+    .txt-contato .p-contato{
+        margin: 20px 0;
+    }
+    
+    
+    form{
+        width: 90%;
+        display: inline-block;
+        text-align: center;
+        margin: 0 2%;
+    }
+    
+    form label{
+        display: block;
+        font-size: 18px;
+    }
+    /* FIM ESTILIZACAO */
+
+
+    /* INICIO ESTILZIÇÃO FOOTER */
+    footer .flex{
+        flex-direction: column;
+        align-content: center;
+    }
+    
+
+    footer .line-footer{
+        text-align: center;
+    }
+    
+    footer .logo-footer img{
+        width: 25%;
+        margin-left: 0;
+    }
+
+
+    footer .line-borda p{
+        font-size: 14px;
+    }
+    
+    .line-borda p, .borda{
+        color: #EFEFEF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px 0;
+    }
+    /* FIM ESTILIZACAO */
+
+}
