@@ -1,7 +1,9 @@
 @media screen and (max-width: 1020px){
     /* INICIO ESTILIZACAO HEADER */
     .interface .logotipo img{
-        width: 45%;
+        width: 30%;
+    
+
     }
     
     .menu-mob{
@@ -27,18 +29,20 @@
     .topo-do-site .flex{
         gap: 30px;
         flex-direction: column;
+        padding: 50px 0;
     }
 
     
     .topo-do-site .txt-topo h1{
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         line-height: 40px;
     }
     
     
     .topo-do-site .img-topo img{
-        width: 100%;
-        border-radius: 30px;
+        width: 90%;
+        margin-left: 0;
+
     }
     /* FIM TELA PRINCIPAL */
     
@@ -51,7 +55,6 @@
 
     .sobre .flex{
         flex-direction: column;
-       
     }
 
     .sobre h2{
@@ -61,6 +64,9 @@
     }
     .sobre p{
         margin-bottom: 40px;
+    }
+    .txt-sobre{
+        flex-direction: column;
     }
 
     .sobre .img-sobre img{
@@ -81,6 +87,17 @@
     .projetos .flex{
         gap: 40px;
     }
+
+    .seta{
+    background-color: #495092;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    width: 70px;
+    height: 30px;
+    font-size:  15px;
+
+    }   
 
     /* INICIO ESTILIZACAO FORMULARIO */
     section.contato{
@@ -153,4 +170,58 @@
     }
     /* FIM ESTILIZACAO */
 
+}
+
+@media screen and (max-width: 768px) {
+  .topo-do-site .txt-topo h1 {
+    font-size: 1.8rem;
+    line-height: 35px;
+  }
+
+  .seta {
+    width: 55px;
+    height: 28px;
+    font-size: 13px;
+  }
+
+  .projetos .interface h2 {
+    font-size: 2rem;
+  }
+
+  .projetos-box {
+  flex: 0 0 300px;
+  }
+
+
+  .txt-contato h2 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Telas menores que 480px (smartphones pequenos) */
+@media screen and (max-width: 480px) {
+  .topo-do-site .txt-topo h1 {
+    font-size: 1.5rem;
+  }
+
+  .projetos .interface h2 {
+    font-size: 1.5rem;
+  }
+  .projetos-box {
+  flex: 0 0 230px;
+  }
+
+  .seta {
+    width: 45px;
+    height: 25px;
+    font-size: 12px;
+  }
+
+  form label {
+    font-size: 16px;
+  }
+
+  footer .logo-footer img {
+    width: 50%;
+  }
 }
