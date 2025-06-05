@@ -2,12 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'popins' , sans-serif;
+    font-family: 'poppins' , sans-serif;
 }
 
 header{
-    background-color: #000;
+    background-color: #ffffff;
     padding: 0 4%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: sticky;
+    z-index: 9999;
 }
 
 .flex{
@@ -27,12 +32,12 @@ header > .interface{
 }
 
 .interface .logotipo img{
-    width: 30%;
+    width: 20%;
 }
 
 .menu-mob{
     display: none;
-    color: #fff;
+    color: #222222e3;
     position: relative;
     width: 50%;
     text-align: right ;
@@ -47,14 +52,6 @@ header > .interface{
     font-size: 26px;
 }
 
-/* Estilizaçã menu mobile */
-
-
-
-
-
-/* Fim */
-
 
 header nav ul li{
     display: inline-block;
@@ -65,16 +62,25 @@ header nav ul li{
 
 header nav ul li a{
     text-decoration: none;
-    color: #998989;
-    font-size: 18px;  
+    color: #222222e3;
+    font-size: 17px;  
     display: inline-block;
     padding: 5px 15px;
+    font-weight: 500;
 }
 
 nav.menu-desktop ul a:hover{
     transform: scale(1.05);
     transition: .2s; 
-    color: #fff;
+    color: #44444460;
+}
+
+header .contatoBtn{
+    background-color: #1E90FF;
+    padding: 7px 15px;
+    border-radius: 5px;
+    color: #f5f5f5;
+
 }
 
 /* Estilo menu mobile */
@@ -138,207 +144,267 @@ nav.menu-desktop ul a:hover{
 /* Sessa topo do site */
 
 section.topo-do-site{
-    padding: 80px 4%;
+    padding: 0 4%;
     background-color: #EFEFEF;
 }
 
 
 .topo-do-site .flex{
-    gap: 60px;
-    justify-content: center;
     align-items: center;
 }
 
 
 
+
 .topo-do-site .txt-topo h1{
-    font-size: 3.5rem;
-    line-height: 50px;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    font-weight: 700;
 }
 
 .topo-do-site .txt-topo h1 span{
-    color: #484f92;
+    color: #2563eb;
 }
 
 .topo-do-site .txt-topo p{
-    font-size: 18px;
-    margin: 35px 0;
-    text-align: justify;
+    margin: 30px 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem;
+    color: #4b5563;
 }
 
 
 .topo-do-site .btn-contato button{
-    width: 200px;
-    height: 50px;
-    border-radius: 30px;
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.375rem;
     font-weight: 600;
-    background-color: transparent;
-    border: 2px solid #484f92;
-    transition: .2s;
-    font-size: 16px;
-    color: #484f92;
+    transition: 0.3s;
 
 }
 
 .topo-do-site .btn-contato button:hover{
     transform: scale(1.05);
     box-shadow: 0 0 8px #2222223d;
-    color: #484f92;
-   
 }
 
 
+
 .topo-do-site .img-topo img{
-    width: 110%;
+    width: 80%;
     border-radius: 30px;
+    margin-left: 150px;
 }
 
 /* Sessao Sobre */
 
-section.sobre{
-    padding: 90px 4%;
-    background-color: #EFEFEF;
+.sobre {
+  padding: 4rem 1rem;
+  background-color: #fff; /* cor branca */
+  color: #1f2937; /* cinza escuro para texto (equivale a text-gray-800) */
+  font-family: 'Poppins', sans-serif;
+}
+
+.sobre .interface {
+  max-width: 1120px; /* max-w-7xl */
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sobre h2 {
+  font-size: 2.5rem; /* text-3xl */
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.sobre h2 span {
+  color: #2563eb; /* azul (equivale a text-blue-600) */
+}
+
+.sobre p {
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  font-size: 1.125rem; /* text-lg */
+  line-height: 1.6;
+  text-align: center;
+  color: #374151; /* cinza médio */
+}
+
+.sobre .flex {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 2rem;
+    justify-content: center;
+}
+
+/* Texto ao lado da imagem */
+.txt-sobre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.box-sobre {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgb(0 0 0 / 0.1);
+  max-width: 320px;
+  height: 100%;
+}
+
+.box-sobre:hover {
+  box-shadow: 0 6px 12px rgb(0 0 0 / 0.15);
+}
+
+.box-sobre h3 {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1f2937;
+
+}
+
+.box-sobre h3 i {
+  margin-right: 0.5rem;
+  color: #2563eb; /* azul */
+  font-size: 1.25rem;
+
+}
+
+.box-sobre p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #374151;
 }
 
 
-.sobre .flex{
-    flex-direction: row;
-    gap: 50px;
-    align-items: center;
-    overflow: hidden;
-}
 
-.sobre .txt-sobre{
-    margin-top: -20px;
-}
+/* Responsividade */
+@media (max-width: 768px) {
+  .sobre .flex {
+    flex-direction: column;
+  }
 
-.sobre h2{
-    font-size: 3.5rem;
-    line-height: 45px;
+  .txt-sobre, .img-sobre {
+    max-width: 100%;
+  }
+
+  .sobre h2, .sobre p {
     text-align: center;
-    margin-bottom: 20px;
-}
-
-.sobre h2 span{
-    color: #495092;
-    display: block;
-}
-
-.sobre p{
-    font-size: 20px;
-    margin: 15px 0;
-    text-align: justify;
-}
-
-.sobre .txt-sobre .box-sobre{
-    border: 2px solid #495092;
-    margin: 20px 0;
-    padding: 20px;
-    border-radius: 20px;
-}
-
-.sobre .txt-sobre .box-sobre h3{
-    font-size: 22px;
-}
-
-.sobre .txt-sobre .box-sobre p{
-    font-size: 18px;
-    text-align: justify;
-}
-
-.sobre .img-sobre img{
-    width: 110%;
+  }
 }
 
 /* Sessao projetos */
 
-section.projetos{
-    padding: 80px 0;
-    background-color: #EFEFEF;   
+section.projetos {
+  padding: 80px 0;
+  background-color: #EFEFEF;
+}
+
+.projetos .titulo {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.projetos .titulo span{
+    color: #2563eb;
 }
 
 
-.projetos .interface h2{
-    font-size: 3.5rem;
-    text-align: center;
-    margin-bottom: 35px;
+.carrossel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 20px;
 }
 
-.projetos .interface h2 span{
-    color: #495092;
-}
-.projetos .flex{
-    gap: 30px;
-    flex-wrap: wrap;
-}
-.projetos .projetos-box{
-    padding: 25px;
-    border-radius: 25px;
-    transition: .3s;
-    max-width:275px;
-    margin: 0 auto;
+.carrossel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 20px 0;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
 }
 
-.projetos .projetos-box:hover{
-    transform: scale(1.05);
-    box-shadow: 0 0 8px #222222bd;
+.carrossel::-webkit-scrollbar {
+  display: none;
 }
 
-.projetos .projetos-box h3{
-    font-size: 22px;
-    margin: 15px 0;
-    color: #000a66e7;
-    text-align: center;
+.projetos-box {
+  flex: 0 0 300px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  scroll-snap-align: start;
+  box-shadow: 0 0 10px #00000015;
+  transition: transform 0.3s;
 }
 
-.projetos .projetos-box p{
-    text-align: center;
+.projetos-box:hover {
+  transform: scale(1.05);
+}
+
+.projetos-box img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.projetos-box h3 {
+  font-size: 20px;
+  margin: 15px 0 10px;
+  color: #2563eb;
+  text-align: center;
+}
+
+.projetos-box p {
+  font-size: 15px;
+  text-align: center;
+  color: #333;
+}
+
+.seta {
+  background-color: #495092;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size:  20px;
+  cursor: pointer;
+  margin: 0 10px;
+  z-index: 2;
+  transition: 0.3s;
+}
+
+.seta:hover {
+  background-color: #3a3f74;
+  transform: scale(1.1);
 }
 
 
-.projetos .projetos-box img{
-    width: 90%;
-    border-radius: 20px;
-    display: inline-block;
-    position: relative;
-    left: 5%;
-    
-}
-
-.projetos .btn-social{
-    text-align: center;
-    margin: 30px 0;
-}
-
-.projetos .btn-social p{
-    font-size: 20px;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-.projetos .btn-social button{
-    width: 110px;
-    background-color: #495092;
-    border: none;
-    border-radius: 30px;
-    transition: .3s;
-    margin-right: 15px;
-}
-
-.projetos .btn-social button:hover{
-    transform: scale(1.05);
-}
-
-.projetos .btn-social button i{
-    color: #fff;
-    font-size: 26px;
-}
 
 /* formulario contato */
 
 section.contato{
     padding: 80px 4%;
-    background-image: linear-gradient(45deg, #495092, #310034);
+    background: #f5f5f5a1;
 }
 
 .txt-contato , .form-contato{
@@ -349,7 +415,7 @@ section.contato{
 }
 
 .txt-contato{
-    color: #fff;
+    color: #444;
     vertical-align: middle;
     position: relative;
 
@@ -357,11 +423,12 @@ section.contato{
 
 .txt-contato h2{
     font-size: 4rem;
-    line-height: 50px;
+    line-height: 60px;
 }
 
 .txt-contato h2 span{
     display: block;
+    color: #2563eb;
 }
 
 .txt-contato .p-contato{
@@ -380,18 +447,19 @@ section.contato{
 }
 
 .txt-contato .icon-contato a{
-    color: #fff;
+    color: #2563eb;
     text-decoration: none;;
 }
-
+/* estilo formulario */
 form{
-    color: #fff;
+    color: #111;
     width: 60%;
 }
 
 form label{
     display: block;
     font-size: 18px;
+    color: #222;
 }
 
 form input , form textarea{
@@ -405,10 +473,10 @@ form div{
 form input {
     border-radius: 40px;
     padding: 10px;
-    border: 2px solid #fff;
+    border: 2px solid #33333327;
     background: transparent;
     outline: none;
-    color: #fff;
+    color: #4b5563;
     font-size: 18px;
 }
 
@@ -416,20 +484,32 @@ form textarea{
     padding: 10px;
     height:  120px;
     resize: none;
-    border: 2px solid #fff;
+    border: 2px solid #33333327;
     background: transparent;
     border-radius: 30px;
-    color: #fff;
+    color: #222; 
     outline: none;
+    font-size: 18px;
 }
 
 form .btn-enviar{
     text-align: center;
 }
 
-.btn-enviar input{
-    width: 120px;
+.btn-enviar button{
+   background-color: #2563eb;
+   color: white;
+    border: none;
+    padding: 0.65rem 1.7rem;
+    font-weight: 600;
+    font-size: 1.125rem;
+    border-radius: 0.375rem;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-enviar button:hover{
+    transform: scale(1.05);
 }
 
 
@@ -437,7 +517,7 @@ form .btn-enviar{
 
 footer{
     padding: 20px 4%;
-    background-color: #000;
+    background-color: #1f2937;
 }
 
 footer .flex{
@@ -447,7 +527,7 @@ footer .flex{
 
 
 footer .logo-footer img{
-    width: 25%;
+    width: 20%;
     margin-left: -25px;
 }
 
@@ -462,7 +542,7 @@ footer .line-footer{
 
 footer .line-footer p i{
     color: #EFEFEF;
-    font-size: 20px;
+    font-size: 15px;
     margin-right:  3px;
 }
 
@@ -483,20 +563,33 @@ footer .line-footer p a{
     margin-left: 5px;
 }
 
-.btn-social button{
-    padding: 10px 22px;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #fff;
-    border: 0;
-    color: #484f92;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: .2s;
-    margin-right: 5px;
+.line-borda span.dev{
+    color: #EFEFEF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    font-size: 12px;
+    font-style: italic;
 }
 
-button:hover{
-    box-shadow: 0px 0px 8px #222222bd;
+.btn-social a {
+    text-decoration: none;
+}
+.btn-social a button {
+    padding: 10px 20px;
+    font-size: 23px;
+    font-weight: 600;
+    background-color: transparent;
+    border: 0;
+    color: #f5f5ff;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+
+
+.btn-social a button:hover{
     transform: scale(1.05);
 }
